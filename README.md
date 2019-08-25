@@ -1,2 +1,3 @@
-# RealWorldHTTP-JS
-자바스크립트를 사용하여 RealWorld HTTP 코드 동작시키기
+# RealWorldHTTP-JS 📖
+
+- Go 언어로 되어있는 동작코드를 JS로 변경하여 동작시켜 봅시다.
