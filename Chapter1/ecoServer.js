@@ -5,7 +5,8 @@ var server = http.createServer(function(request, response, err) {
     console.log(err);
     response.writeHead(404, { "Content-Type": "text/html" });
   } else {
-    console.log(request.method, request.url);
+    console.log(request.method);
+    console.log(request.headers);
     response.writeHead(200, { "Content-Type": "text/html" });
     response.write("<html><body>Hello</body></html>");
   }
