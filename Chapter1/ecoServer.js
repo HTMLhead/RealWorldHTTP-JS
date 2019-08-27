@@ -7,9 +7,10 @@ var server = http.createServer(function(request, response, err) {
   } else {
     console.log(request.method);
     console.log(request.headers);
+    console.log(response.statusCode);
     response.writeHead(200, { "Content-Type": "text/html" });
     response.write("<html><body>Hello</body></html>");
   }
   response.end();
 });
-server.listen(18888, "127.0.0.1");
+server.listen(18888, "localhost");
