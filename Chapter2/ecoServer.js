@@ -7,7 +7,7 @@ const server = http.createServer(function(request, response, err) {
   console.log(`Query: ${url.parse(URL).query}`);
   console.log(`Proto: ${url.parse(URL).protocol}`);
   console.log(`Method: ${request.method}`);
-  console.log(`Header: ${request.headers}`);
+  console.log(`Header: `);
   console.log(request.headers);
   let body = [];
   request
