@@ -12,6 +12,8 @@ function handleResponse(res) {
       serverData += chunk;
     });
     res.on("end", () => {
+      console.log("statusCode :", res.statusCode);
+      console.log("headers", res.headers);
       console.log("received server data:");
       console.log(serverData);
     });
