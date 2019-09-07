@@ -16,9 +16,9 @@ const server = http.createServer(function(request, response, err) {
     })
     .on("end", () => {
       body = Buffer.concat(body).toString();
+      console.log(`--Body--\n${body}`);
       // 여기서 `body`에 전체 요청 바디가 문자열로 담겨있습니다.
     });
-  console.log(`--Body--\n${body}`);
 
   if (!request.headers["Authorization"]) {
     const authenticateObj = {
